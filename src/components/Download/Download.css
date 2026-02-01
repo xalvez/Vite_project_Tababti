@@ -32,7 +32,6 @@
 .quote-icon {
   font-size: 10rem;
   color: #e0fbf9; /* Very light teal as seen in image */
-  font-family: serif;
   line-height: 1;
   user-select: none;
 }
@@ -107,22 +106,26 @@
   margin-bottom: 40px;
   position: relative;
   left: 50px;
+  gap: 40px;
  }
 
 /* Style for individual images */
 .about-mid-img {
   /* Adjust width to ensure they don't overlap or get too small */
-  width: 25%; 
+  width: 20%; 
   max-width: 450px;
   height: auto;
   cursor: pointer;
   object-fit: cover;
   transition: transform 0.3s ease;
+  border-radius: 50px;
 }
 
 /* Hover effect to stay consistent with your other cards */
 .about-mid-img:hover {
   transform: scale(1.05); /* */
+  box-shadow: 0 4px 15px rgb(50, 191, 174);
+
 }
 
 .section-divider {
@@ -134,14 +137,13 @@
   border-radius: 2px; /* Smooths the edges of the bold line */
   width: 400px;
 }
-
+ 
 .zenith-social-grid {
   display: flex;
   gap: 15px;
   color: black;
   position: relative;
   left: 70px;
-  display: none;
 }
 
 /* .zenith-social-grid {

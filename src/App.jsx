@@ -17,9 +17,9 @@ function App() {
 
     // Add appropriate font based on language
     if (language === "ar") {
-      document.body.style.fontFamily = "var(--font-family-ar)";
+      document.body.style.fontFamily = "var(--font-arabic)";
     } else {
-      document.body.style.fontFamily = "var(--font-family-en)";
+      document.body.style.fontFamily = "var(--font-body)";
     }
   }, [language]);
 

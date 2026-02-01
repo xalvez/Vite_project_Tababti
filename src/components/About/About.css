@@ -3,7 +3,6 @@
   padding: 0;
   width: 100%;
   background-color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about-calander-teal-card {
@@ -44,14 +43,14 @@
   color: black;
 }
 
-.hero-description {
+.about-section-description {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 40px;
   color: black;
 }
 
-.hero-description p {
+.about-section-description p {
   margin-bottom: 15px;
 }
 
@@ -108,7 +107,7 @@
 .medical-portal-full-bleed {
   margin: 0;
   width: 100%;
-    background-image: url('../../assets/images/About/doctor_background.png'); /* No background image */
+  background-image: url("../../assets/images/About/doctor_background.png"); /* No background image */
   background-size: cover;
 
   /* Centers the image so it doesn't look cut off on small screens */
@@ -133,13 +132,13 @@
   justify-content: space-between;
   overflow: visible; /* CRITICAL for the pop-out image */
   flex-direction: row; /* Force text on left, image on right */
-
 }
 
 /* 3. The Image Pop-out logic remains the same */
 .medical-portal-img-box {
   flex: 1;
   margin-top: -120px; /* Adjust to get that 20% pop-out effect */
+  margin-right: 110px;
 }
 
 .medical-portal-img {
@@ -148,7 +147,7 @@
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.3));
   /* clip-path: polygon(0% 0%, 80% 0%, 80% 100%, 0% 100%); */
   position: relative;
-  top: 17px;
+  top: 20px;
 }
 
 .doctor-hero-content {
@@ -532,14 +531,10 @@
     width: 160px; /* Very small for tiny screens */
   }
 
-  .hero-description p {
+  .about-section-description p {
     font-size: 0.9rem;
   }
 }
-
- 
-
-
 
 /* Responsive Overrides */
 
@@ -568,7 +563,7 @@
   .phone-number {
     font-size: 1.4rem; /* Prevent overflow on medium phones */
   }
-  
+
   .modal-body h3 {
     font-size: 1.3rem;
   }

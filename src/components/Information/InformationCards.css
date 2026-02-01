@@ -164,9 +164,6 @@ background: linear-gradient(to right, #19D3AE 20%, #0FCFEC 80%);
   background-color: white; /* White square bullets */
 }
 
-
-
-
 /* Target text in the FIRST and LAST cards (Teal) */
 .card-teal .card-title,
 .card-teal .card-list {
@@ -188,10 +185,6 @@ background: linear-gradient(to right, #19D3AE 20%, #0FCFEC 80%);
   background-color: #ffffff;
 }
 
-
-
- 
- 
 .rtl-text .card-list li::before {
   left: auto;
   right: 10px; /* Position bullet on the right */

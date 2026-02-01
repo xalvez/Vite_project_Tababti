@@ -44,6 +44,7 @@ const AboutUs = ({ language }) => {
         <img src={android} alt="About 2" className="about-mid-img" />
         <img src={windows} alt="About 2" className="about-mid-img" />
       </div>
+      
       <hr className="section-divider" />
 
       <p className="copy-right-Download">

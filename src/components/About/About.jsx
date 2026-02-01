@@ -10,7 +10,7 @@ import SyrianFlag from "../../assets/images/About/SyrianFlag.jpg";
 
 const About = ({ language }) => {
   const translations = language === "ar" ? arTranslations : enTranslations;
-  console.log("Current language in About:", language);  
+  console.log("Current language in About:", language);
   const isRtl = language === "ar";
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [copyStatus, setCopyStatus] = useState("Copy");
@@ -41,8 +41,8 @@ const About = ({ language }) => {
 
   return (
     <section
-    id="about-clients-section-for-btn-pationts"
-className={`about-doctor-con-outer-container layout-stable ${isRtl ? "rtl-text" : "ltr-text"}`}
+      id="about-clients-section-for-btn-pationts"
+      className={`about-doctor-con-outer-container layout-stable ${isRtl ? "rtl-text" : "ltr-text"}`}
     >
       {/* first section */}
       <div className="about-calander-teal-card">
@@ -67,17 +67,16 @@ className={`about-doctor-con-outer-container layout-stable ${isRtl ? "rtl-text" 
         <div className="About-section-content">
           <h1 className="About-client-at-title">{translations.about.title}</h1>
 
-          <div className="hero-description">
+          <div className="about-section-description">
             <p>{translations.about.subtitle}</p>
-            <p>
-              {translations.about.search_prompt}
-
+            <p>{translations.about.search_prompt}</p>
+            <div>
               {translations.about.features.map((features, index) => (
                 <div key={index} className="feature-item">
                   {features}
                 </div>
               ))}
-            </p>
+            </div>
 
             <a href="#" className="doctor-hero-btn">
               {translations.about.cta_button}
